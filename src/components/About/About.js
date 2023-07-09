@@ -17,7 +17,7 @@ const About = () => {
               <h2 className="about-title">About Me</h2>
             </div>
             <div className="about-col2">
-              <a download="CV_Frontend Developer" href={CV} className="button">
+              <a download="CV_Frontend Developer" href={CV} className="down-btn">
                 Download CV
               </a>
             </div>

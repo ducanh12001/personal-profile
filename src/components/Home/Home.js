@@ -1,10 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import "./style.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiFillGithub, AiFillLinkedin, AiOutlineSend } from "react-icons/ai";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <Helmet>
@@ -37,9 +39,9 @@ const Home = () => {
                 I like to craft solid and scalable frontend products with great user experience. Know more about me
                 through my Portfolio.
               </p>
-              <Link to="/contact" className="button">
-                Contact <AiOutlineSend />
-              </Link>
+              <button onClick={() => navigate('/contact')} className="button">
+                Contact <AiOutlineSend style={{marginLeft: '0.3rem'}}/>
+              </button>
             </div>
           </div>
         </div>

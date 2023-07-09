@@ -29,3 +29,16 @@
 .about-row .skill-desc {
     padding-top: 0.25rem;
 }
+
+.down-btn {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    background-color: rgb(252, 201, 179);
+    color: black;
+}
+
+.down-btn:hover {
+    background-color: rgb(239, 129, 110);
+}

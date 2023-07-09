@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { contactConfig } from "../../data";
 import "./style.css";
 
 const Contact = () => {
-  const handleSubmit = () => {};
 
-  const handleChange = () => {};
+  const [formData, setFormData] = useState({
+    email: '',
+    name: '',
+    message: ''
+  })
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+    
   return (
     <>
       <Helmet>
@@ -38,7 +53,7 @@ const Contact = () => {
                     id="name"
                     name="name"
                     placeholder="Name"
-                    value={""}
+                    value={formData.name || ""}
                     type="text"
                     required
                     onChange={handleChange}
@@ -49,7 +64,7 @@ const Contact = () => {
                     name="email"
                     placeholder="Email"
                     type="email"
-                    value={""}
+                    value={formData.email || ""}
                     required
                     onChange={handleChange}
                   />
@@ -60,7 +75,7 @@ const Contact = () => {
                   name="message"
                   placeholder="Message"
                   rows="5"
-                  value={""}
+                  value={formData.message || ""}
                   onChange={handleChange}
                   required
                 ></textarea>

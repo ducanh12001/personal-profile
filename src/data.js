@@ -69,7 +69,7 @@ const dataportfolio = [
 ];
 
 const contactConfig = {
-    email: "ducanh@gmail.com",
+    email: "ducanh2001@gmail.com",
     phone: "0942966568",
     description: "",
     YOUR_SERVICE_ID: "service_id",

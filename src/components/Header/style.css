@@ -55,7 +55,7 @@
     flex-direction: column;
     align-items: center;
     font-size: 16px;
-    color: #ff6868;
+    color: #17C3B2;
     font-weight: 500;
     position: relative;
     text-transform: uppercase;
@@ -66,7 +66,7 @@
 
 .nav-link:focus,
 .nav-link:hover {
-    color: #ff2424;
+    color: black;
 }
 
 .nav-link:focus:after,
@@ -82,7 +82,7 @@
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #8e5757;
+    background-color: #17C3B2;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
