@@ -32,10 +32,10 @@ const Home = () => {
             </div>
             <div className="home-intro">
               <h1>Ngo Duc Anh</h1>
-              <h3>Web developer</h3>
+              <h3>Frontend developer</h3>
               <p>
-                I use HTML, CSS, JavaScript, Reactjs. Join me
-                through my Information.
+                I like to craft solid and scalable frontend products with great user experience. Know more about me
+                through my Portfolio.
               </p>
               <Link to="/contact" className="button">
                 Contact <AiOutlineSend />

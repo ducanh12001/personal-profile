@@ -25,7 +25,7 @@ const About = () => {
           <div className="about-row">
             <div className="about-col1">Introduce</div>
             <div className="about-col2">
-              I'm a Frontend Developer. Good knowledge at HTML, CSS, JavaScript and Reactjs. I have 5 months experience in front-end position.
+              I'm a Frontend Developer. I have 6 months of experience in front-end position in an company. Good understanding of Javascript, Reactjs. Currently looking for opportunities to apply my knowledge, learn and be ready to learn more new technology.
             </div>
           </div>
           <div className="about-row">

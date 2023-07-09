@@ -24,7 +24,7 @@ const experience = [
 const skills = [
     {
         name: "Front-end",
-        description: "HTML, CSS, JavaScript and Reactjs",
+        description: "HTML, CSS, Javascript, Reactjs, Typescript, Antd, Sass, Redux, responsive design",
     },
     {
         name: "Git",
