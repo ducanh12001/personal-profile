@@ -1,0 +1,89 @@
+.portfolio-container .port-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.port-item {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem auto;
+    position: relative;
+    background: rgb(226, 226, 226);
+    padding: 6px;
+    border: 1px solid gray;
+    transition: 0.3s ease;
+    font-size: 0;
+    min-height: 300px;
+}
+
+.port-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.port-item .content {
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255 255 255 / 70%);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    border: 1px solid black;
+}
+
+.port-item .content {
+    opacity: 0;
+    transition-delay: 1s;
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+
+.port-item:hover {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.port-item:hover .content {
+    height: calc(100% - 30px);
+    width: calc(100% - 30px);
+    opacity: 1;
+}
+
+.port-item:hover .content {
+    opacity: 1;
+    color: black;
+}
+
+.port-item .content a {
+    background: white;
+    border: 1px solid black;
+    padding: 4px 8px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.port-item .content a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio-container .port-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .portfolio-container .port-list {
+        grid-template-columns: 1fr
+    }
+}

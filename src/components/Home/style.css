@@ -1,0 +1,81 @@
+.home-main {
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.home-social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.social-icon:hover {
+    color: rgb(84, 84, 84);
+}
+
+.home-img {
+    background: url(../../assets/images/800px-Pierre-Person.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    order: 1;
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+    animation: imgAnimation 8s ease-in-out infinite 1s;
+}
+
+@keyframes imgAnimation {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.home-intro h1 {
+    font-size: 3rem;
+    margin-bottom: 0.25rem;
+}
+
+.home-intro h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.home-intro p {
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+    .home-main {
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 3.5rem;
+    }   
+
+    .home-img {
+        order: initial;
+        justify-self: initial;
+        width: 200px;
+        height: 200px;
+        box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+    }
+
+    .home-intro {
+        grid-column: 1/3;
+    }
+}

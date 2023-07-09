@@ -1,0 +1,31 @@
+.about-row {
+    margin-bottom: calc(3rem + 5.128vw);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.about-col1 {
+    font-size: 1.5rem;
+}
+
+.about-col2 table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.about-col2 table th, 
+.about-col2 table td {
+    border-bottom: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+.about-row .skill-name {
+    font-size: 1.25rem;
+    padding: 8px 0;
+    border-bottom: solid 2px black;
+}
+
+.about-row .skill-desc {
+    padding-top: 0.25rem;
+}
