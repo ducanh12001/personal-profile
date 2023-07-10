@@ -24,8 +24,6 @@
 
 .port-item .content {
     position: absolute;
-    height: 0;
-    width: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -40,13 +38,7 @@
     transition: 0.3s ease-in-out;
     opacity: 0;
     border: 1px solid black;
-}
-
-.port-item .content {
-    opacity: 0;
-    transition-delay: 1s;
-    transition: 0.3s ease;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .port-item:hover {
@@ -56,10 +48,6 @@
 .port-item:hover .content {
     height: calc(100% - 30px);
     width: calc(100% - 30px);
-    opacity: 1;
-}
-
-.port-item:hover .content {
     opacity: 1;
     color: black;
 }
@@ -82,7 +70,7 @@
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 600px) {
     .portfolio-container .port-list {
         grid-template-columns: 1fr
     }
