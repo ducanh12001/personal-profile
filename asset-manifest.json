@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/personal-profile/static/css/main.804926ec.css",
+    "main.css": "/personal-profile/static/css/main.ff899200.css",
     "main.js": "/personal-profile/static/js/main.5220c48f.js",
     "static/js/787.f586a476.chunk.js": "/personal-profile/static/js/787.f586a476.chunk.js",
     "static/media/CV.pdf": "/personal-profile/static/media/CV.d947df1c26908ef17ef5.pdf",
     "static/media/800px-Pierre-Person.jpg": "/personal-profile/static/media/800px-Pierre-Person.c91a3b2a03ab11d08fad.jpg",
     "index.html": "/personal-profile/index.html",
-    "main.804926ec.css.map": "/personal-profile/static/css/main.804926ec.css.map",
+    "main.ff899200.css.map": "/personal-profile/static/css/main.ff899200.css.map",
     "main.5220c48f.js.map": "/personal-profile/static/js/main.5220c48f.js.map",
     "787.f586a476.chunk.js.map": "/personal-profile/static/js/787.f586a476.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.804926ec.css",
+    "static/css/main.ff899200.css",
     "static/js/main.5220c48f.js"
   ]
 }
